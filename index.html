@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="main-title">My Daily Schedule</h1>
+
+<div class="drag-container">
+    <ul class="drag-list">
+        <!-- Backlog Colum -->
+        <li class="drag-column backlog-column">
+            <span class="header">
+                <h1> Backlog</h1>
+            </span>
+            <!-- backlog content -->
+            <div  id="dacklog-content" class="custom-scroll">
+                <ul class="drag-items-list" id="backlog-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragenter(0)">
+                   
+                   
+                </ul>
+            </div>
+
+            <!-- Add Button Group -->
+            <div class="add-btn-group">
+                <div class="add-btn">
+                   <span class="plus-sign">+</span>
+                    <span>Add Items</span>
+                </div>
+                <div class="add-btn solid">
+                   <span>Save Item</span> 
+                </div>
+                <div class="add-container">
+                    <div class="add-item"></div>
+                </div>
+            </div>
+        </li>
+         <!-- Progress Colum -->
+        <li class="drag-column progress-column">
+            <span class="header">
+                <h1> Progress</h1>
+            </span>
+            <!-- backlog content -->
+            <div  id="progress-content"  class="custom-scroll">
+                <ul class="drag-items-list" id="progress-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragenter(1)"> </ul>
+            </div>
+
+            <!-- Add Button Group -->
+            <div class="add-btn-group">
+                <div class="add-btn">
+                   <span class="plus-sign">+</span>
+                    <span>Add Items</span>
+                </div>
+                <div class="add-btn solid">
+                   <span>Save Item</span> 
+                </div>
+                <div class="add-container">
+                    <div class="add-item"></div>
+                </div>
+            </div>
+        </li>
+
+         <!-- Complete Colum -->
+        <li class="drag-column complete-column">
+            <span class="header">
+                <h1> Complete</h1>
+            </span>
+            <!-- Progress content -->
+            <div  id="dacklog-content"   class="custom-scroll">
+                <ul class="drag-items-list" id="complete-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragenter(2)"></ul>
+            </div>
+
+            <!-- Add Button Group -->
+            <div class="add-btn-group">
+                <div class="add-btn">
+                   <span class="plus-sign">+</span>
+                    <span>Add Items</span>
+                </div>
+                <div class="add-btn solid">
+                   <span>Save Item</span> 
+                </div>
+                <div class="add-container">
+                    <div class="add-item"></div>
+                </div>
+            </div>
+        </li>
+
+         <!-- on-hold Colum -->
+        <li class="drag-column on-hold-column">
+            <span class="header">
+                <h1> On hold</h1>
+            </span>
+            <!-- backlog content -->
+            <div  id="dacklog-content"  class="custom-scroll">
+                <ul class="drag-items-list" id="on-hold-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragenter(3)"></ul>
+            </div>
+
+            <!-- Add Button Group -->
+            <div class="add-btn-group">
+                <div class="add-btn">
+                   <span class="plus-sign">+</span>
+                    <span>Add Items</span>
+                </div>
+                <div class="add-btn solid">
+                   <span>Save Item</span> 
+                </div>
+                <div class="add-container">
+                    <div class="add-item"></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
